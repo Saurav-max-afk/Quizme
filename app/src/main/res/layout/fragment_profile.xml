@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/colorpurple"
+    tools:context=".ProfileFragment">
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/textbox"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/profileImage"
+        app:layout_constraintStart_toStartOf="@+id/profileImage"
+        app:layout_constraintTop_toBottomOf="@+id/profileImage" />
+
+    <EditText
+        android:id="@+id/nameBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/textbox"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="User"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/emailBox3"
+        app:layout_constraintStart_toStartOf="@+id/emailBox3"
+        app:layout_constraintTop_toBottomOf="@+id/emailBox3" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/textbox"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/nameBox2"
+        app:layout_constraintStart_toStartOf="@+id/nameBox2"
+        app:layout_constraintTop_toBottomOf="@+id/nameBox2" />
+
+    <Button
+        android:id="@+id/update_Btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_3"
+        android:text="UPDATE BUTTON"
+        android:textColor="@color/color_white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+</androidx.constraintlayout.widget.ConstraintLayout>
